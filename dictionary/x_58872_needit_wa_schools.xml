@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="WA Schools" max_length="40" name="x_58872_needit_wa_schools" sizeclass="0" type="collection">
+        <element choice="3" default="WA" label="AUS State" max_length="40" name="aus_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="WA" sequence="1" value="WA"/>
+                <element inactive_on_update="false" label="VIC" sequence="2" value="VIC"/>
+                <element inactive_on_update="false" label="TAS" sequence="3" value="TAS"/>
+                <element inactive_on_update="false" label="SA" sequence="4" value="SA"/>
+                <element inactive_on_update="false" label="QLD" sequence="5" value="QLD"/>
+                <element inactive_on_update="false" label="NT" sequence="6" value="NT"/>
+                <element inactive_on_update="false" label="NSW" sequence="7" value="NSW"/>
+                <element inactive_on_update="false" label="ACT" sequence="8" value="ACT"/>
+            </choice>
+        </element>
+        <element choice="3" choice_field="aus_state" choice_table="x_58872_needit_wa_schools" label="Postal AUS State" max_length="40" name="postal_aus_state" type="choice">
+            <choice/>
+        </element>
+        <element choice="3" default="WA" label="Postal Postcode" max_length="40" name="postal_postcode" type="decimal">
+            <choice/>
+        </element>
+        <element label="Postal Street" max_length="64" name="postal_street" type="string"/>
+        <element label="Postal Suburb" max_length="64" name="postal_suburb" type="string"/>
+        <element label="Postcode" max_length="20" name="postcode" type="decimal"/>
+        <element label="Street" max_length="64" name="street" type="string"/>
+        <element label="Suburb" max_length="64" name="suburb" type="string"/>
+    </element>
+</database>
